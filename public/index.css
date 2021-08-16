@@ -1,0 +1,148 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    font-family: "Montserrat", sans-serif;
+}
+body {
+    background: #FEFEFE;
+    padding: 0 ;
+}
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 10px 0px;
+    text-align: center;
+    background-color: #125589;
+    }
+
+.header img{
+    margin-right: 25px;
+    margin-bottom: 0px;
+    width: 60px;
+    height:60px;
+    border-radius: 50%;
+}
+
+.header h1{
+    padding-top: 10px;
+    color: white;
+}
+
+.app {
+    padding-top: 80px;
+    text-align: center;
+    width: 60%;
+    margin: auto;
+    background-color: #F7F9FA;
+
+}
+.app__mobile{
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    background-color: #F6F6F6;
+
+}
+
+
+
+.app__form{
+    padding: 10px;
+    position: fixed;
+    bottom: 0px;
+    z-index: 100;
+    width: 60%;
+    background-color: #e9e9eb;
+}
+
+.app__formcontrol{
+    display: flex !important;
+    flex-direction: row !important;
+    
+}
+.form__input{
+    flex:1;
+}
+.form__button{
+    flex: 0;
+}
+
+
+
+.message {
+    margin: 10px;
+    width:fit-content;
+    ;
+}
+
+.message_user{
+    margin-left: auto;
+    color: white;
+    text-align: left !important;
+
+}
+
+.message_usercard {
+    
+    background-color: #125589 !important;
+    color: white !important;
+    border-radius: 20px !important;
+}
+.message_guestcard{
+    background-color: #f0f0f0 !important;
+    color: black !important;
+    border-radius: 20px !important;
+}
+
+/* material ui */
+.MuiFormLabel-root.Mui-focused{
+    color: #125589 !important;
+}
+.MuiInput-underline:after{
+    border-bottom: 2px solid #125589 !important;
+}
+.MuiIconButton-colorPrimary{
+    color: #125589 !important;
+}
+
+.MuiCardContent-root{
+    padding: 5px !important;
+}
+.MuiTypography-h5{
+    font-size: 0.8rem !important;
+}
+
+
+
+.header{
+    position: fixed;
+    height: 80px;
+    width: 100%;
+    top: 0px;
+    bottom: 0px;
+    z-index: 1;
+}
+
+
+@media (max-width: 1000px) {
+    .app {
+        width: 100%;
+    }
+    .app__form{
+        width: 100%;
+    }
+    .header h1{
+        padding-top: 8px;
+        font-size: 1.5rem;
+    }
+    .header img{
+        margin-right: 10px;
+        width: 50px;
+        height: 50px;
+    }
+
+    }
